@@ -24,7 +24,6 @@ def get_internal_links(url):
 
         print(f"Parsing HTML for {url}")
 
-        # Логирование всех найденных тегов
         for tag in soup.find_all(['a', 'img', 'video', 'audio']):
             print(f"Found tag: {tag}")
             href = tag.get('href')
